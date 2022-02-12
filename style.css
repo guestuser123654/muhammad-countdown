@@ -1,0 +1,76 @@
+#save {
+    background-color: #4CAF50;
+   font-size: 20px;
+   text-align: center;
+   border: none;
+   color: black;
+   padding: 15px 32px;
+   text-decoration: none;
+   display: inline-block;
+   margin: 4px 2px;
+   cursor: pointer;
+ }
+ 
+ 
+ 
+ #enter-button {
+   background-color: #4CAF50; /* Green */
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 50px;
+   margin: 4px 2px;
+   cursor: pointer;
+   display: flex;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ 
+ #bar {
+   color: blue;
+   font-size: 40px;
+   display: flex;
+   margin-left: auto;
+   margin-right: auto;
+ 
+ }
+ 
+ #content {
+     text-align: center;
+     font-size: 30px;
+     color: blue;
+ }
+  
+ #id-display {
+   background-color: lightgreen;
+   color: blue;
+   font-size: 40px;
+ }
+ 
+ ::placeholder { 
+   color: lightblue;
+ }
+ 
+ #landing-page {
+   color: red;
+ }
+ 
+ #userNamePlaceholder {
+  color: blue;
+   font-size: 40px;
+   display: flex;
+   margin-left: auto;
+   margin-right: auto;
+   
+ }
+ 
+ #userId {
+   display: flex;
+   margin-left: auto;
+   margin-right: auto;
+   color: green;
+   
+ }
