@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <style>
+    #landing-page {
+      text-align: center
+    }
+    #create-account{
+      font-size: 20px;
+      background-color: lightgreen;
+    }
+    
+  </style>
+  
+  
+  
+  <body id="landing-page">
+    <!-- HTML -->
+    <h1>First insert your name, then copy the ID key and press create account.</h1>
+        <h1>Enter your name here:</h1>
+        <input id="userNamePlaceholder" type="text" name="userName" placeholder="your name!!">
+        <br><br>
+        <h3>Here is your own generated ID key:</h3>
+        <!--userID-->
+ <span style="background-color: yellow" id="userID"></span>
+
+
+
+        <button id="create-account">Create account</button>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+
+    <script>
+
+  const firebaseConfig = {
+  apiKey: "AIzaSyAxjx1RkwT3gFdulJRPw58LMtmlvK-2XLM",
+  authDomain: "countdown-freedom-project.firebaseapp.com",
+  projectId: "countdown-freedom-project",
+  storageBucket: "countdown-freedom-project.appspot.com",
+  messagingSenderId: "484429118926",
+  appId: "1:484429118926:web:442bf51d11560f0893bf9f",
+  measurementId: "G-MHKB8KKFWK"
+};
+      if (!firebase.apps.length) {
+        firebase.initializeApp(firebaseConfig);
+      }
+
+      // const firebase = require("firebase");
+      // require("firebase/firestore");
+      var db = firebase.firestore();
+      console.log(db);
+    </script>
+
+    <script src="landing-page2.js"></script>
+  </body>
+</html>
