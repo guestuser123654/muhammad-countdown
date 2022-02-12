@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+<style>
+  #landing-page {
+    background-color: lightgreen
+  }
+  #h2{
+    font-size: 40px;
+    text-align: center;
+  }
+  .placeholder {
+    text-align: center;
+  }
+  #generate-link{
+    font-size: 40px;
+    text-align: center
+  }
+</style>
+
+
+  <body id="landing-page">
+    <!-- HTML -->
+      <h2 id="h2">Welcome to Countdown website! First Login to save your info.</h2>
+      <input type="text" name="userName" placeholder="your username">
+      <br><br>
+      <input type="text" name="userID" placeholder="your userID" align="right">
+      <br><br>
+      <button id="login">Sign In</button>
+      <p><a id="generate-link" href="landing-page2.html">Click here to generate userID!</a></p>
+      <!--<img src="imgs/logo.png">-->
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+
+    <script>
+
+     const firebaseConfig = {
+  apiKey: "AIzaSyAxjx1RkwT3gFdulJRPw58LMtmlvK-2XLM",
+  authDomain: "countdown-freedom-project.firebaseapp.com",
+  projectId: "countdown-freedom-project",
+  storageBucket: "countdown-freedom-project.appspot.com",
+  messagingSenderId: "484429118926",
+  appId: "1:484429118926:web:442bf51d11560f0893bf9f",
+  measurementId: "G-MHKB8KKFWK"
+};
+      if (!firebase.apps.length) {
+        firebase.initializeApp(firebaseConfig);
+      }
+
+      // const firebase = require("firebase");
+      // require("firebase/firestore");
+      var db = firebase.firestore();
+      console.log(db);
+    </script>
+    <script src="landing-page1.js"></script>
+  </body>
+</html>
